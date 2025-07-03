@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Join Resolvia! Explore career opportunities in video editing, social media, content strategy, and more. Apply now!">
+    <meta name="keywords" content="careers, jobs, video editing, social media, content creation, Resolvia">
+    <title>Careers at Resolvia</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+
+    <style>
+        html, body {
+    overflow-x: hidden;
+    width: 100%;
+    }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg,  #7bc8ff, #5754ff);
+            margin: 0;
+            padding: 0;
+            color: #e0e0e0;
+        }
+        header {
+            background: rgba(10, 37, 64, 0.8);
+            backdrop-filter: blur(8px);
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, #000428, #004e92 );
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            border: rgba(224, 224, 224, 0.75) 1px solid;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #d0dfff;
+        }
+        .job-listings {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .job-listing {
+            padding: 15px;
+            border: 1px solid rgba(224, 224, 224, 0.5);
+            border-radius: 8px;
+            background: linear-gradient(135deg, #1f1f38, #0a2540);
+            transition: transform 0.3s ease-in-out;
+        }
+        .job-listing:hover {
+            transform: translateY(-5px);
+        }
+        .job-listing h3 {
+            margin-top: 0;
+            color: #d0dfff;
+        }
+        .apply-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, rgb(0, 102, 255), rgb(0, 195, 255));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .apply-btn:hover {
+            background: linear-gradient(90deg, #007BFF, #00d4ff);
+        }
+        form {
+            margin-top: 20px;
+            background: #1f1f38;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+        
+        
+        input, textarea, select {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(10, 10, 35, 0.8);
+    color: #e0e0e0;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+
+        button {
+            margin-top: 20px;
+            background: linear-gradient(90deg, #28a745, #21bf73);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #21bf73, #28a745);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a2540;
+            color: white;
+            margin-top: 30px;
+        }
+        .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background: #1f1f38;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.progress-container {
+    width: 100%;
+    background: #333;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 0%;
+    background: #00d4ff;
+    border-radius: 8px;
+    transition: width 0.3s ease-in-out;
+}
+#formFeedback {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success {
+    background-color: #21bf73;
+}
+
+.error {
+    background-color: #e74c3c;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="white-logo.png" loading="lazy" alt="Resolvia white logo" height="40"/>
+        </a>
+        Join Our Team at Resolvia
+    </header>
+    <div class="container">
+        <h1>Explore Exciting Career Opportunities</h1>
+        
+        <!-- Job Listings -->
+        <div class="job-listings">
+            <div class="job-listing">
+                <h3>Video Editor</h3>
+                <p>Create high-quality, engaging video content for our clients.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Social Media Manager</h3>
+                <p>Develop and manage content for various social media platforms.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Content Strategist</h3>
+                <p>Plan and execute content strategies aligned with client goals.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Graphic Designer</h3>
+                <p>Design compelling graphics for marketing campaigns and branding.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Paid Ads Specialist</h3>
+                <p>Manage and optimize paid advertising campaigns for clients.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Copywriter</h3>
+                <p>Craft persuasive and engaging copy for ads, emails, and websites.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Client Success Manager</h3>
+                <p>Ensure client satisfaction and build lasting relationships.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Outreach Specialist</h3>
+                <p>Connect with potential clients and generate business opportunities.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Sales Closer</h3>
+                <p>Close deals and manage relationships with high-value clients.</p>
+                <a href="#apply" class="apply-btn">Apply Now</a>
+            </div>
+        </div>
+        
+        <!-- Application Form -->
+        <h2 id="apply">Apply Now</h2>
+        <!-- Progress Bar -->
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<form id="jobApplicationForm" action="https://formspree.io/f/mwplnrrz" method="POST" enctype="multipart/form-data">
+    
+    <!-- 🔹 Step 1: Basic Information -->
+    <div class="form-step active">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone" name="phone">
+
+        <button type="button" class="next-step">Next</button>
+    </div>
+
+    <!-- 🔹 Step 2: Job-Specific Information -->
+    <div class="form-step">
+        <label for="position">Position Applying For</label>
+        <select id="position" name="position" required>
+            <option value="">Select a Position</option>
+            <option value="Video Editor">Video Editor</option>
+            <option value="Social Media Manager">Social Media Manager</option>
+            <option value="Content Strategist">Content Strategist</option>
+            <option value="Graphic Designer">Graphic Designer</option>
+            <option value="Paid Ads Specialist">Paid Ads Specialist</option>
+            <option value="Copywriter">Copywriter</option>
+            <option value="Client Success Manager">Client Success Manager</option>
+            <option value="Outreach Specialist">Outreach Specialist</option>
+            <option value="Sales Closer">Sales Closer</option>
+        </select>
+
+        <label for="experience">Years of Experience</label>
+        <select id="experience" name="experience" required>
+            <option value="">Select Experience</option>
+            <option value="0-1 years">0-1 years</option>
+            <option value="1-3 years">1-3 years</option>
+            <option value="3-5 years">3-5 years</option>
+            <option value="5+ years">5+ years</option>
+        </select>
+
+        <label for="availability">Availability</label>
+        <select id="availability" name="availability" required>
+            <option value="">Select Availability</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Freelance">Freelance</option>
+        </select>
+
+        <button type="button" class="prev-step">Previous</button>
+        <button type="button" class="next-step">Next</button>
+    </div>
+
+    <!-- 🔹 Step 3: Additional Details -->
+    <div class="form-step">
+        <label for="tools">What tools/software are you proficient in?</label>
+        <input type="text" id="tools" name="tools" placeholder="e.g., Premiere Pro, Photoshop, Facebook Ads">
+
+        <label for="project">Describe a successful project you’ve worked on</label>
+        <textarea id="project" name="project"></textarea>
+
+        <label for="expectations">What’s your expected pay range?</label>
+        <input type="text" id="expectations" name="expectations" placeholder="e.g., $500/month">
+
+        <label for="SocialMedia">Social Media (Optional)</label>
+        <input type="url" id="SocialMedia" name="SocialMedia">
+
+        <label for="message">Message (Optional)</label>
+        <textarea id="text" name="message" ></textarea>
+
+        <button type="button" class="prev-step">Previous</button>
+        <button type="submit">Submit Application</button>
+    </div>
+</form>
+
+<!-- 🔹 JavaScript for Multi-Step Navigation -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const formSteps = document.querySelectorAll(".form-step");
+        const nextBtns = document.querySelectorAll(".next-step");
+        const prevBtns = document.querySelectorAll(".prev-step");
+        let currentStep = 0;
+
+        function showStep(step) {
+            formSteps.forEach((stepDiv, index) => {
+                stepDiv.classList.toggle("active", index === step);
+            });
+        }
+
+        nextBtns.forEach(btn => {
+            btn.addEventListener("click", function () {
+                if (currentStep < formSteps.length - 1) {
+                    currentStep++;
+                    showStep(currentStep);
+                }
+            });
+        });
+
+        prevBtns.forEach(btn => {
+            btn.addEventListener("click", function () {
+                if (currentStep > 0) {
+                    currentStep--;
+                    showStep(currentStep);
+                }
+            });
+        });
+
+        showStep(currentStep);
+    });
+</script>
+
+<!-- 🔹 CSS to Hide/Show Steps Smoothly -->
+<style>
+    .form-step {
+        display: none;
+    }
+    .form-step.active {
+        display: block;
+    }
+</style>
+
+
+    </div>
+    
+    <footer>
+        &copy; 2025 Resolvia. All rights reserved.
+    </footer>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const jobListings = document.querySelectorAll(".job-listing");
+        const positionSelect = document.getElementById("position");
+    
+        jobListings.forEach(listing => {
+            const applyBtn = listing.querySelector(".apply-btn");
+            applyBtn.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                
+                const jobTitle = listing.querySelector("h3").innerText;
+                
+                for (let option of positionSelect.options) {
+                    if (option.value === jobTitle) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+                
+                // Optional: Scroll to the form smoothly
+                document.getElementById("apply").scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    });
+    </script>
+    <script> document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("jobApplicationForm");
+        const successMessage = document.createElement("div");
+        successMessage.id = "formFeedback";
+        document.body.appendChild(successMessage);
+    
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+    
+            const formData = new FormData(form);
+    
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    showMessage("✅ Application submitted successfully!", "success");
+                    form.reset(); // Clear the form
+                    updateProgressBar(); // Reset progress bar
+                } else {
+                    throw new Error("Submission failed. Please try again.");
+                }
+            })
+            .catch(error => {
+                showMessage("❌ Error: " + error.message, "error");
+            });
+        });
+    
+        function showMessage(message, type) {
+            successMessage.textContent = message;
+            successMessage.className = type;
+            successMessage.style.display = "block";
+    
+            setTimeout(() => {
+                successMessage.style.display = "none";
+            }, 3000);
+        }
+    
+        function updateProgressBar() {
+            const progressBar = document.getElementById("progress");
+            progressBar.style.width = "0%";
+        }
+    });
+    </script>
+    <script> document.addEventListener("DOMContentLoaded", function() {
+        const jobListings = document.querySelectorAll(".job-listing");
+        const modal = document.getElementById("jobModal");
+        const modalTitle = document.getElementById("modalJobTitle");
+        const modalDescription = document.getElementById("modalJobDescription");
+        const modalApplyBtn = document.getElementById("modalApplyBtn");
+        const closeModal = document.querySelector(".close");
+        const positionSelect = document.getElementById("position");
+    
+        // Job descriptions stored directly in HTML (Modify as needed)
+        const jobDescriptions = {
+    "Video Editor": `
+        - Transform raw footage into high-quality, engaging content.
+        - Edit videos by cutting, trimming, and sequencing clips.
+        - Add transitions, color correction, motion graphics, and special effects.
+        - Work closely with content creators and marketing teams.
+        - Preferred tools: Adobe Premiere Pro, After Effects, DaVinci Resolve.
+    `,
+
+    "Social Media Manager": `
+        - Develop and execute social media strategies to enhance brand awareness.
+        - Manage content across Instagram, Facebook, LinkedIn, and Twitter.
+        - Plan content, engage with the audience, and track performance metrics.
+        - Collaborate with designers and copywriters for compelling posts.
+        - Analyze data to optimize campaigns and improve engagement.
+    `,
+
+    "Content Strategist": `
+        - Research, plan, and oversee content creation for blogs, social media, and email marketing.
+        - Work with writers, designers, and marketing teams to develop engaging content.
+        - Ensure all content aligns with SEO best practices and brand voice.
+        - Craft compelling narratives to drive traffic and user engagement.
+        - Stay updated on content marketing trends and audience psychology.
+    `,
+
+    "Graphic Designer": `
+        - Create visually appealing designs for digital and print media.
+        - Design logos, social media graphics, and marketing materials.
+        - Maintain brand consistency across all visual content.
+        - Work with tools like Adobe Photoshop, Illustrator, and Canva.
+        - Translate client requirements into stunning visuals.
+    `,
+
+    "Paid Ads Specialist": `
+        - Create, manage, and optimize paid advertising campaigns.
+        - Run ads across Google Ads, Facebook Ads, and Instagram Ads.
+        - Conduct keyword research and audience targeting.
+        - A/B test ad creatives and optimize conversion rates.
+        - Track performance metrics to maximize ROI.
+    `,
+
+    "Copywriter": `
+        - Write compelling and persuasive copy for websites, ads, and email marketing.
+        - Develop engaging headlines, product descriptions, and blog articles.
+        - Ensure all content aligns with SEO best practices.
+        - Adapt writing style for different target audiences.
+        - Work closely with marketing teams to align messaging with branding.
+    `,
+
+    "Client Success Manager": `
+        - Maintain strong client relationships and ensure smooth communication.
+        - Act as the bridge between clients and internal teams.
+        - Address client concerns and provide strategic solutions.
+        - Enhance client satisfaction and increase retention.
+        - Identify upselling opportunities to drive additional revenue.
+    `,
+
+    "Outreach Specialist": `
+        - Identify and reach out to potential clients via email, LinkedIn, and other platforms.
+        - Generate interest and schedule meetings with leads.
+        - Craft persuasive outreach messages to build relationships.
+        - Manage lead databases and CRM systems for tracking outreach efforts.
+        - Work towards generating business opportunities through strategic networking.
+    `,
+
+    "Sales Closer": `
+        - Convert warm leads into paying customers.
+        - Conduct discovery calls and present service offerings.
+        - Handle objections, negotiate deals, and close sales.
+        - Understand client pain points and offer tailored solutions.
+        - Experience in high-ticket sales is a plus.
+    `
+};
+
+
+    
+        // Show Modal on Click
+        jobListings.forEach(listing => {
+            listing.addEventListener("click", function() {
+                const jobTitle = this.querySelector("h3").innerText;
+                modalTitle.innerText = jobTitle;
+                modalDescription.innerText = jobDescriptions[jobTitle] || "No description available.";
+                modal.style.display = "block";
+    
+                // Set Apply Now button to auto-fill job position
+                modalApplyBtn.onclick = function() {
+                    for (let option of positionSelect.options) {
+                        if (option.value === jobTitle) {
+                            option.selected = true;
+                            break;
+                        }
+                    }
+                    modal.style.display = "none"; // Close modal
+                    document.getElementById("apply").scrollIntoView({ behavior: "smooth" });
+                };
+            });
+        });
+    
+        // Close Modal
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        };
+    
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+       </script>
+
+<script>   document.addEventListener("DOMContentLoaded", function() {
+    const formInputs = document.querySelectorAll("input, select, textarea");
+    const progressBar = document.getElementById("progressBar");
+
+    function updateProgress() {
+        let filledFields = 0;
+        formInputs.forEach(input => {
+            if (input.value.trim() !== "") filledFields++;
+        });
+
+        let progress = (filledFields / formInputs.length) * 100;
+        progressBar.style.width = `${progress}%`;
+    }
+
+    formInputs.forEach(input => {
+        input.addEventListener("input", updateProgress);
+    });
+});
+ </script>
+<!-- Job Description Modal -->
+<div id="jobModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalJobTitle"></h2>
+        <p id="modalJobDescription"></p>
+        <a href="#apply" class="apply-btn" id="modalApplyBtn">Apply Now</a>
+    </div>
+</div>
+
+</body>
+</html>
