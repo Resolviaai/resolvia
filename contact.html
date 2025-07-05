@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Resolvia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+    }
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #111827;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      background: linear-gradient(90deg, #3b82f6, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p, label {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 15px 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 8px;
+      font-family: inherit;
+    }
+    form button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      margin-top: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background: #1e40af;
+    }
+    .contact-info {
+      margin-top: 40px;
+      border-top: 1px solid #1e293b;
+      padding-top: 30px;
+    }
+    .contact-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #93c5fd;
+    }
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+    .map {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    .nav {
+      background: #020617;
+      padding: 15px;
+      text-align: center;
+    }
+    .nav a {
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 20px;
+    }
+    .footer {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.95rem;
+      padding: 40px 20px;
+      background: #020617;
+    }
+    .social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      .map iframe {
+        width: 100% !important;
+        height: 250px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="nav">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="https://theresolvia.com/#pricing">Book Call</a>
+  </div>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>If you have questions, ideas, or you're ready to grow with automation — we'd love to hear from you.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Other Ways to Reach Us</h2>
+      <p><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&to=contact@theresolvia.com" target="_blank" style="color:#60a5fa; text-decoration: underline;">contact@theresolvia.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919226902396" style="color:#60a5fa; text-decoration: underline;">+91-9226902396</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/919226902396" style="color:#60a5fa;">Chat with us</a></p>
+      <p><strong>Website:</strong> <a href="https://theresolvia.com" style="color:#60a5fa;">www.theresolvia.com</a></p>
+      <p><strong>Head Office:</strong> Mumbai, India</p>
+      <div class="social-icons">
+  <a href="https://www.linkedin.com/company/resolvia" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="height:24px; filter:invert(66%) sepia(90%) saturate(600%) hue-rotate(180deg); margin: 0 10px;">
+  </a>
+  <a href="https://x.com/resolvia" target="_blank" aria-label="Twitter/X" title="Twitter/X">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter/X" style="height:24px; filter:invert(66%) sepia(90%) saturate(600%) hue-rotate(180deg); margin: 0 10px;">
+  </a>
+  <a href="https://instagram.com/resolvia" target="_blank" aria-label="Instagram" title="Instagram">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="height:24px; filter:invert(66%) sepia(90%) saturate(600%) hue-rotate(180deg); margin: 0 10px;">
+  </a>
+</div>
+    </div>
+      <div class="map">
+        <iframe width="100%" height="275" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=684&amp;height=275&amp;hl=en&amp;q=102/b%20wing%20,%20om%20mangal%20murti%20apt,%20Central%20park%20,%20nalasopara%20east%20mumbai+(Resolvia%20Headquarters%20)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Resolvia. All rights reserved. | <a href="https://theresolvia.com" style="color:#60a5fa">Main Site</a>
+  </div>
+</body>
+</html>

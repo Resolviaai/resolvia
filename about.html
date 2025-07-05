@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Resolvia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(ellipse at top, #0f172a, #020617);
+      color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+    }
+    .container {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 50px;
+      background: #111827;
+      border-radius: 24px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+      transition: all 0.3s ease-in-out;
+    }
+    h1, h2 {
+      text-align: center;
+      background: linear-gradient(90deg, #60a5fa, #2563eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 60px;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      margin: 20px 0;
+      color: #cbd5e1;
+    }
+    .team {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .member {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      background: linear-gradient(to right, #1e293b, #0f172a);
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .member:hover {
+      transform: translateY(-6px);
+    }
+    .member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 12%;
+      border: 3px solid #60a5fa;
+    }
+    .member-details {
+      flex: 1;
+    }
+    .member-details h3 {
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+      color: #93c5fd;
+    }
+    .member-details p {
+      font-size: 1rem;
+      color: #cbd5e1;
+      margin: 0;
+    }
+    .nav {
+      background: #020617;
+      padding: 18px;
+      text-align: center;
+      border-bottom: 1px solid #1e293b;
+    }
+    .nav a {
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 24px;
+      font-size: 1.05rem;
+      position: relative;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #60a5fa;
+      bottom: -6px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+    .nav a:hover::after {
+      width: 100%;
+    }
+    .footer {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.95rem;
+      padding: 50px 20px;
+      background: #020617;
+      margin-top: 60px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 24px;
+      }
+      .member {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="/">Home</a>
+    <a href="/contact">Contact</a>
+    <a href="https://theresolvia.com/#pricing">Book Call</a>
+  </div>
+
+  <div class="container">
+    <h1>About Resolvia</h1>
+    <p><strong>Resolvia</strong> is your partner in AI-powered automation. We help local businesses like dentists, coaches, realtors, gyms, and contractors grow their revenue without growing their teams.</p>
+
+    <p>Founded by automation experts with deep knowledge of AI workflows and small business operations, we deliver systems that work silently in the background to generate leads, nurture prospects, automate repetitive tasks, and increase ROI.</p>
+
+    <p>We believe in performance-first delivery — every tool and workflow we set up is designed to bring measurable value to your business.</p>
+
+    <p>We're not just another agency. We’re your growth partners — building automations that create more time, more revenue, and more freedom for founders.</p>
+
+    <p>Ready to transform your business with smart systems? <a href="https://theresolvia.com/#book-call" style="color:#60a5fa; text-decoration: underline;">Book your free strategy call</a> today.</p>
+
+    <h2>Meet Our Founders</h2>
+    <div class="team">
+      <div class="member">
+        <img src="photo1.png" alt="Founder 1">
+        <div class="member-details">
+          <h3>Rohit Bag</h3>
+          <p>Co-Founder, Growth Architect<br>Specialist in lead generation, product design, and go-to-market.</p>
+        </div>
+      </div>
+      <div class="member">
+        <img src="photo2.png" alt="Founder 2">
+        <div class="member-details">
+          <h3>Aadarsh Shingh Chauhan</h3>
+          <p>Co-Founder, AI Strategist<br>Expert in workflow automation & system design.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Resolvia. All rights reserved. | <a href="https://theresolvia.com" style="color:#60a5fa">Main Site</a>
+  </div>
+</body>
+</html>
