@@ -1,0 +1,39 @@
+# LLMs.txt - AI Access Guide for Resolvia
+# Last Updated: July 7, 2025
+
+## Site Overview
+Resolvia is an AI automation agency helping medium-sized businesses (dentists, gyms, realtors, coaches, and contractors) grow faster through AI-powered content, outreach, and operations.
+
+## Core Services
+- AI video workflows: /services/ai-video-workflows
+- Social content automation: /services/social-content-automation
+- Email outreach automation: /services/email-automation
+- Website scraping & enrichment: /services/data-enrichment
+
+## Industry-Specific Landing Pages
+- Dentists: https://dentists.theresolvia.com
+- Gyms: https://gyms.theresolvia.com
+- Realtors: https://realtors.theresolvia.com
+- Coaches: https://coaches.theresolvia.com
+- Contractors: https://contractors.theresolvia.com
+
+## Blog (AI/Automation Articles)
+- https://theresolvia.blogspot.com/
+- [Include top blog articles here if you want to prioritize specific ones]
+
+## FAQs / Help Content
+- What is Resolvia? → /about
+- How does Resolvia generate results? → /case-studies
+- How does automation work? → /faq
+- Pricing & ROI → /pricing
+
+## AI Content Usage Policy
+- AI agents are permitted to access and summarize public content.
+- Do not include client portals, login pages, or gated content.
+- Attribution required when quoting or using summaries:  
+  “Source: Resolvia (https://theresolvia.com)”
+
+## Data Format & Access
+- This content is provided in plain text for LLM readability.
+- Use of this file is encouraged for ChatGPT, Claude, Perplexity, and other AI agents.
+
