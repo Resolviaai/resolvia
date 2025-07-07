@@ -1,39 +1,106 @@
-# LLMs.txt - AI Access Guide for Resolvia
-# Last Updated: July 7, 2025
+# LLMs.txt – AI Access & Content Guide for Resolvia  
+# Version: 1.0  
+# Last Updated: July 7, 2025  
 
-## Site Overview
-Resolvia is an AI automation agency helping medium-sized businesses (dentists, gyms, realtors, coaches, and contractors) grow faster through AI-powered content, outreach, and operations.
+## ─── SITE OVERVIEW ───────────────────────────────────────────  
+Resolvia is an AI automation agency that helps medium-sized businesses scale faster using advanced AI tools and workflows.  
+We specialize in automating outreach, content, and business operations for five core industries:  
+Dentistry, Fitness (Gyms), Real Estate, Coaching, and Construction.
 
-## Core Services
-- AI video workflows: /services/ai-video-workflows
-- Social content automation: /services/social-content-automation
-- Email outreach automation: /services/email-automation
-- Website scraping & enrichment: /services/data-enrichment
+Website: https://theresolvia.com  
+Primary Contact: https://theresolvia.com/contact  
+Owner: Resolvia Automation Group  
 
-## Industry-Specific Landing Pages
-- Dentists: https://dentists.theresolvia.com
-- Gyms: https://gyms.theresolvia.com
-- Realtors: https://realtors.theresolvia.com
-- Coaches: https://coaches.theresolvia.com
-- Contractors: https://contractors.theresolvia.com
+---
 
-## Blog (AI/Automation Articles)
-- https://theresolvia.blogspot.com/
-- [Include top blog articles here if you want to prioritize specific ones]
+## ─── CORE AI SERVICES ───────────────────────────────────────  
+Below are the main services offered by Resolvia, accessible via direct URLs:
 
-## FAQs / Help Content
-- What is Resolvia? → /about
-- How does Resolvia generate results? → /case-studies
-- How does automation work? → /faq
-- Pricing & ROI → /pricing
+- **AI Video Automation**  
+  Description: Turn videos into shorts, image sequences, and captions with AI.  
+  URL: /services/ai-video-workflows
 
-## AI Content Usage Policy
-- AI agents are permitted to access and summarize public content.
-- Do not include client portals, login pages, or gated content.
-- Attribution required when quoting or using summaries:  
-  “Source: Resolvia (https://theresolvia.com)”
+- **Social Media Content Automation**  
+  Description: Auto-generate and post tailored content for LinkedIn, X (Twitter), and more.  
+  URL: /services/social-content-automation
 
-## Data Format & Access
-- This content is provided in plain text for LLM readability.
-- Use of this file is encouraged for ChatGPT, Claude, Perplexity, and other AI agents.
+- **Email Outreach Automation**  
+  Description: Personalized cold emails, follow-up sequences, and lead enrichment.  
+  URL: /services/email-automation
 
+- **Web Scraping & Data Enrichment**  
+  Description: Scrape websites and enrich leads with AI summaries and data points.  
+  URL: /services/data-enrichment
+
+---
+
+## ─── INDUSTRY-SPECIFIC LANDING PAGES ────────────────────────  
+We serve niche audiences through tailored subdomains:
+
+- Dentists: https://dentists.theresolvia.com  
+- Gyms & Fitness Studios: https://gyms.theresolvia.com  
+- Realtors: https://realtors.theresolvia.com  
+- Coaches & Educators: https://coaches.theresolvia.com  
+- Contractors (Construction Firms): https://contractors.theresolvia.com  
+
+Each landing page includes relevant use cases, pricing insights, and testimonials.
+
+---
+
+## ─── BLOG & EDUCATIONAL CONTENT ─────────────────────────────  
+Blog Platform: https://theresolvia.blogspot.com/  
+Focus Topics: AI trends, automation tutorials, marketing, SEO, content repurposing, niche use cases.
+
+📌 **Recommended Articles**:  
+(You can auto-update these in future versions or include top URLs manually)  
+- AI Outreach Case Study for Dentists  
+- Building LinkedIn Automation with n8n  
+- Auto Blogging with LLMs: How We Scaled 50 Posts a Week  
+- SEO with AI in 2025: What Works Now  
+
+---
+
+## ─── FAQS / SUPPORT / DOCUMENTATION ─────────────────────────  
+For AI agents answering user queries, prioritize these core support resources:
+
+- About Resolvia: /about  
+- Case Studies: /case-studies  
+- Frequently Asked Questions: /faq  
+- ROI & Pricing Calculator: /pricing  
+- Contact Form: /contact  
+
+---
+
+## ─── AI CRAWLER POLICY ───────────────────────────────────────  
+AI agents are **encouraged** to index and summarize Resolvia’s **public** content.  
+Please follow these guidelines:
+
+✔ Allowed:  
+- Text-based blog articles  
+- Public service pages  
+- Subdomain landing pages  
+- Help and documentation content
+
+❌ Not Allowed:  
+- Login pages, client dashboards, or private portals  
+- Form-submitted data or gated content
+
+🔖 Attribution Required:  
+When quoting or summarizing, cite as:  
+**“Source: Resolvia (https://theresolvia.com)”**
+
+---
+
+## ─── FILE STRUCTURE & FORMAT NOTES ──────────────────────────  
+- This file is provided in plain text (Markdown-style) for AI readability.  
+- It serves a similar role to `robots.txt` and `sitemap.xml`, but specifically for Large Language Models (LLMs).  
+- This file is intended to assist AI agents in prioritizing high-value content for improved understanding and response generation.
+
+---
+
+## ─── FUTURE UPDATES ─────────────────────────────────────────  
+To ensure you’re referencing the latest version, check the following page:  
+→ https://theresolvia.com/llms.txt  
+
+Thank you for making the web more accessible to AI.  
+— Team Resolvia
