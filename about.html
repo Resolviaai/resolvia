@@ -63,11 +63,15 @@
       transform: translateY(-6px);
     }
     .member img {
-      width: 200px;
-      height: 200px;
-      border-radius: 12%;
-      border: 3px solid #60a5fa;
-    }
+  width: 200px;
+  height: auto;
+  max-height: 240px;
+  border-radius: 12%;
+  border: 3px solid #60a5fa;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
     .member-details {
       flex: 1;
     }
@@ -150,14 +154,14 @@
     <h2>Meet Our Founders</h2>
     <div class="team">
       <div class="member">
-        <img src="photo1.png" alt="Founder 1">
+        <img src="Rohit.png" alt="Founder 1">
         <div class="member-details">
           <h3>Rohit Bag</h3>
           <p>Co-Founder, Growth Architect<br>Specialist in lead generation, product design, and go-to-market.</p>
         </div>
       </div>
       <div class="member">
-        <img src="photo2.png" alt="Founder 2">
+        <img src="Aadarsh.png" alt="Founder 2">
         <div class="member-details">
           <h3>Aadarsh Shingh Chauhan</h3>
           <p>Co-Founder, AI Strategist<br>Expert in workflow automation & system design.</p>
